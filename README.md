@@ -31,6 +31,13 @@ select * from indicados_ao_oscar where nome_do_indicado like "%Amy Adams%" and v
 
 * A série de filmes Toy Story ganhou um Oscar em quais anos?
 
+R: ganhou 3 vezes. dois em 2010 e um no ano de 2019
+
+Q:
+```sql
+select * from indicados_ao_oscar where nome_do_filme like "%Toy Story%" and vencedor = "true";
+```
+
 * A partir de que ano que a categoria "Actress" deixa de existir? 
 
 * Quem ganhou o primeiro Oscar para Melhor Atriz? Em que ano?
