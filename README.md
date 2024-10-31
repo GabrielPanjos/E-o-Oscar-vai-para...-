@@ -49,6 +49,13 @@ SELECT * FROM indicados_ao_oscar WHERE categoria = "ACTRESS" ORDER BY ano_cerimo
 
 * Quem ganhou o primeiro Oscar para Melhor Atriz? Em que ano?
 
+R: Janet Gaynor ganhou o primeiro Oscar para melhor atriz no ano de 1928.
+
+Q:
+```sql
+select * from indicados_ao_oscar where vencedor = "true" and categoria = "ACTRESS";
+```
+
 * Na campo "Vencedor", altere todos os valores com "true" para 1 e todos os valores "false" para 0.
 
 * Em qual edição do Oscar "Crash" concorreu ao Oscar?
