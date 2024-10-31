@@ -40,6 +40,13 @@ select * from indicados_ao_oscar where nome_do_filme like "%Toy Story%" and venc
 
 * A partir de que ano que a categoria "Actress" deixa de existir? 
 
+R: A partir do ano de 1977
+
+Q:
+```sql
+SELECT * FROM indicados_ao_oscar WHERE categoria = "ACTRESS" ORDER BY ano_cerimonia DESC;
+```
+
 * Quem ganhou o primeiro Oscar para Melhor Atriz? Em que ano?
 
 * Na campo "Vencedor", altere todos os valores com "true" para 1 e todos os valores "false" para 0.
