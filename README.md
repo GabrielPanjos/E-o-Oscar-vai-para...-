@@ -77,11 +77,11 @@ SELECT nome_do_filme, cerimonia FROM indicados_ao_oscar WHERE nome_do_filme like
 
 * O filme Central do Brasil aparece no Oscar?
 
-R:
+R: Sim, no ano de 1998
 
 Q:
 ```sql
-SELECT nome_do_filme, cerimonia FROM indicados_ao_oscar WHERE nome_do_filme like "%Crash";
+SELECT * FROM indicados_ao_oscar WHERE nome_do_filme like "Central%";
 ```
 
 * Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser. 
@@ -90,18 +90,19 @@ R:
 
 Q:
 ```sql
-
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) VALUES (2016,2017,3,'Melhor Filme de Animação','Laika','Kubo e as Cordas Mágicas','false');
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) VALUES (2017,2018,3,'Melhor Filme de Animação','Pixar Animation Studios','Coco','true');
+INSERT INTO indicados_ao_oscar(ano_filmagem,ano_cerimonia,cerimonia,categoria,nome_do_indicado,nome_do_filme,vencedor) VALUES (2020,2021,3,'Melhor Filme de Animação','Wolfwalkers','Wolfwalkers','false');
 ```
 
 * Denzel Washington já ganhou algum Oscar?
 
-R:
+R: Sim, ja ganhou 2 Oscar. O primeiro oscar no ano de 1990 e o segundo foi em 2002
 
 Q:
 ```sql
-
+SELECT * FROM indicados_ao_oscar WHERE nome_do_indicado like "%Denzel Washington%" AND vencedor = "1";
 ```
-
 
 * Quais os filmes que ganharam o Oscar de Melhor Filme?
 
