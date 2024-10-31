@@ -22,6 +22,13 @@ select * from indicados_ao_oscar where nome_do_indicado like "%Natalie Portman%"
 
 * Amy Adams já ganhou algum Oscar?
 
+R: Amy Adams nunca ganhou um Oscar
+
+Q:
+```sql
+select * from indicados_ao_oscar where nome_do_indicado like "%Amy Adams%" and vencedor = "true";
+```
+
 * A série de filmes Toy Story ganhou um Oscar em quais anos?
 
 * A partir de que ano que a categoria "Actress" deixa de existir? 
