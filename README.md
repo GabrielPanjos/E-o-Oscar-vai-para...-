@@ -13,6 +13,13 @@ SELECT COUNT(*) FROM indicados WHERE "Name" Like "%Natalie Portman%";
 
 * Quantos Oscars Natalie Portman ganhou?
 
+R: 1 vez
+
+Q:
+```sql
+select * from indicados_ao_oscar where nome_do_indicado like "%Natalie Portman%" and vencedor = "true";
+```
+
 * Amy Adams já ganhou algum Oscar?
 
 * A série de filmes Toy Story ganhou um Oscar em quais anos?
