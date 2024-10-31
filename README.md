@@ -58,16 +58,77 @@ select * from indicados_ao_oscar where vencedor = "true" and categoria = "ACTRES
 
 * Na campo "Vencedor", altere todos os valores com "true" para 1 e todos os valores "false" para 0.
 
+R:
+
+Q:
+```sql
+update indicados_ao_oscar set vencedor = "1" where vencedor = "true";
+update indicados_ao_oscar set vencedor = "0" where vencedor = "false";
+```
+
 * Em qual edição do Oscar "Crash" concorreu ao Oscar?
+
+R: Crash concorreu na 78° Edição
+
+Q:
+```sql
+SELECT nome_do_filme, cerimonia FROM indicados_ao_oscar WHERE nome_do_filme like "%Crash";
+```
 
 * O filme Central do Brasil aparece no Oscar?
 
+R:
+
+Q:
+```sql
+SELECT nome_do_filme, cerimonia FROM indicados_ao_oscar WHERE nome_do_filme like "%Crash";
+```
+
 * Inclua no banco 3 filmes que nunca foram nem nomeados ao Oscar, mas que merecem ser. 
+
+R:
+
+Q:
+```sql
+
+```
 
 * Denzel Washington já ganhou algum Oscar?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Quais os filmes que ganharam o Oscar de Melhor Filme?
+
+R:
+
+Q:
+```sql
+
+```
+
 
 * Bonus: Quais os filmes que ganharam o Oscar de Melhor Filme e Melhor Diretor na mesma cerimonia?
 
+R:
+
+Q:
+```sql
+
+```
+
+
 * Bonus: Denzel Washington e Jamie Foxx já concorreram ao Oscar no mesmo ano?
+
+R:
+
+Q:
+```sql
+
+```
+
